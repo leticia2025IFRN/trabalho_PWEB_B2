@@ -11,9 +11,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
 
     <title>TSI Café - Loja</title> <link rel="stylesheet" href="public/style.css" /> 
  </head>
+
+ <!-- INICIO DA NAVBAR -->
+
  <body>
     <div class="container mt-3 rounded-3"> 
         <nav class="navbar navbar-expand-lg"> 
@@ -37,11 +41,237 @@
             </div>
         </nav>
     </div>
-    <main style="min-height: 50vh; padding: 2rem;">
-        <h1>Bem-vindo à nossa Loja!</h1>
-        <p>Este é o conteúdo específico da página da loja.</p>
-        </main>
+ <!-- FIM DA NAVBAR -->
 
+<!-- CONTEUDO DA PAGINA: INICIO -->
+
+    <!-- SEÇÃO DE BOAS-VINDAS -->
+    <div class="container text-center mt-5">
+        <h1 class="display-4">O café ideal para você</h1>
+        <p class="lead">Seja você amante de um café intenso e marcante ou fã de notas suaves e delicadas, nossa
+            cafeteria gourmet oferece o equilíbrio perfeito para cada paladar. Descubra aromas exclusivos e viva uma
+            experiência única em cada xícara.</p>
+    </div>
+
+    <!-- SEÇÃO DE CARDS -->
+    <div class="container mt-5">
+        <div class="row">
+
+            <!-- CARD 1: "EXPRESSO" -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Expresso.png" class="card-img-top" alt="Expresso">
+                    <div class="card-body">
+                        <h5 class="card-title">Expresso</h5>
+                        <p class="card-text">Café intenso e concentrado, preparado sob alta pressão para extrair o
+                            máximo de sabor em um pequeno gole.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard1">Ver
+                            mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2: "AMERICANO" -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Americano.png" class="card-img-top" alt="Americano">
+                    <div class="card-body">
+                        <h5 class="card-title">Americano</h5>
+                        <p class="card-text">Espresso diluído em água quente, ideal para quem prefere um café mais
+                            suave, porém cheio de aroma.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard2">Ver
+                            mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3: "CAPPUCCINO" -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Cappuccino.png" class="card-img-top" alt="Cappuccino">
+                    <div class="card-body">
+                        <h5 class="card-title">Cappuccino</h5>
+                        <p class="card-text">Combinação perfeita de espresso, leite vaporizado e espuma cremosa, com
+                            toque sutil de chocolate em pó.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard3">Ver
+                            mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4: "LATTE" -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Latte (Café com leite).png" class="card-img-top" alt="Latte">
+                    <div class="card-body">
+                        <h5 class="card-title">Latte</h5>
+                        <p class="card-text">Espresso misturado a uma grande quantidade de leite vaporizado, resultando
+                            em sabor suave e textura aveludada.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard4">Ver
+                            mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 5: "MACCHIATO" -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Macchiato.png" class="card-img-top" alt="Macchiato">
+                    <div class="card-body">
+                        <h5 class="card-title">Macchiato</h5>
+                        <p class="card-text">Espresso com um toque de espuma de leite, mantendo o sabor forte com leve
+                            suavização.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard5">Ver
+                            mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 6: "MOCHA" -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Mocha.png" class="card-img-top" alt="Mocha">
+                    <div class="card-body">
+                        <h5 class="card-title">Mocha</h5>
+                        <p class="card-text">Espresso combinado com chocolate e leite vaporizado, para os amantes de
+                            café com sabor adocicado e cremoso.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard6">Ver
+                            mais</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MODAIS -->
+    <!-- MODAL CARD 1 -->
+    <div class="modal fade" id="modalCard1" tabindex="-1" aria-labelledby="modalCard1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard1Label">Mais sobre: Expresso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    O clássico italiano. Preparado sob 9 bar de pressão e extraído em cerca de 25 a 30 segundos, o
+                    espresso concentra o máximo de sabor e aroma do café em apenas 25 a 30 ml. A moagem é bem fina,
+                    resultando em uma bebida encorpada, intensa e com a tradicional crema dourada na superfície. É a
+                    base para diversas outras bebidas, como cappuccino, latte e macchiato.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CARD 2 -->
+    <div class="modal fade" id="modalCard2" tabindex="-1" aria-labelledby="modalCard2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard2Label">Mais sobre: Americano</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Café suave e aromático. Feito a partir de um espresso diluído em 100 a 150 ml de água quente, mantém
+                    as notas aromáticas do grão, porém com sabor mais leve e menos amargo. Surgiu na Europa durante a
+                    Segunda Guerra Mundial, quando soldados americanos buscavam um café mais próximo do que bebiam em
+                    casa.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CARD 3 -->
+    <div class="modal fade" id="modalCard3" tabindex="-1" aria-labelledby="modalCard3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard3Label">Mais sobre: Cappuccino</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Equilíbrio perfeito entre café e leite. Tradicionalmente feito com 1/3 espresso, 1/3 leite
+                    vaporizado e 1/3 espuma de leite, resulta em uma bebida cremosa e aromática. Geralmente finalizado
+                    com um toque de chocolate ou canela, é ideal para quem busca suavizar o amargor do café sem perder o
+                    sabor.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CARD 4 -->
+    <div class="modal fade" id="modalCard4" tabindex="-1" aria-labelledby="modalCard4Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard4Label">Mais sobre: Latte</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Suavidade e cremosidade. O Caffè Latte é composto por uma dose de espresso e uma grande quantidade
+                    de leite vaporizado, com apenas uma fina camada de espuma. É a escolha ideal para quem prefere um
+                    sabor mais delicado e levemente adocicado, servindo de base para variações com xaropes aromáticos.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CARD 5 -->
+    <div class="modal fade" id="modalCard5" tabindex="-1" aria-labelledby="modalCard5Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard5Label">Mais sobre: Macchiato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Para quem gosta de café intenso, mas com um toque de leite. “Macchiato” significa “manchado” em
+                    italiano — um espresso “manchado” com uma pequena quantidade de espuma de leite. Mantém a força e
+                    intensidade do café, mas ganha uma leve cremosidade.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CARD 6 -->
+    <div class="modal fade" id="modalCard6" tabindex="-1" aria-labelledby="modalCard6Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard6Label">Mais sobre: Mocha</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Adoçando a experiência do espresso. Combina espresso, chocolate derretido (ou calda de chocolate) e
+                    leite vaporizado, criando uma bebida cremosa e doce. Com 200 a 250 ml, é perfeito para quem gosta de
+                    café com um toque de sobremesa e notas achocolatadas.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- CONTEUDO DA PAGINA: FIM -->
+
+    <!-- INICIO DO RODAPE -->
     <footer class="pt-5 pb-4"> 
         <div class="container text-center text-md-start">
             <div class="row text-center text-md-start">
@@ -105,6 +335,12 @@
             </div>
         </div>
     </footer>
+        
+    <!-- Script do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeB+tHz/K6C6q+8LzI44iT/Yc6tqY6e4z" crossorigin="anonymous"></script>
+
+<!-- FIM DO RODAPE -->
+
  </body>
 </html>

@@ -1,0 +1,74 @@
+/* ===== BASE DO SITE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fffbce; /* Bege claro */
+  color: #451a0a; /* Marrom café */
+}
+
+/* ===== SEÇÃO DE BOAS-VINDAS (HERO) ===== */
+.container.text-center.mt-5 h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 3rem;
+  color: #451a0a;
+}
+
+.container.text-center.mt-5 p {
+  font-size: 1.2rem;
+  color: #6e3d2b;
+}
+
+/* ===== CARDS ===== */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+  background-color: #ffffff;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Título do card */
+.card-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.5rem;
+  color: #451a0a;
+}
+
+/* Texto do card */
+.card-text {
+  color: #6e3d2b;
+}
+
+/* Botão "Ver mais" */
+.btn-primary {
+  background-color: #451a0a; /* Marrom café */
+  border: none;
+  font-weight: bold;
+}
+.btn-primary:hover {
+  background-color: #6e3d2b; /* Marrom mais claro no hover */
+}
+
+/* ===== MODAL ===== */
+.modal-content {
+  border-radius: 12px;
+}
+.modal-header {
+  background-color: #451a0a;
+  color: #fffbce;
+  border-bottom: none;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+.modal-body {
+  font-size: 1rem;
+  color: #451a0a;
+}
