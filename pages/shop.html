@@ -1,83 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+ <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style/style.css">
+    <title>TSI Café - Loja</title> <link rel="stylesheet" href="public/style.css" /> 
+ </head>
 
-  <title>TSI Café - Loja</title>
-</head>
+ <!-- INICIO DA NAVBAR -->
 
-<body>
-  <div class="container mt-3 rounded-3">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="caminho_pra_a_logo" alt="Logo Cafeteria" width="30" height="24"
-            class="d-inline-block align-text-top">
-          TSI Café
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="home.html">Retornar ao Início</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarDropdownMenuLink"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Menu
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li>
-                  <h6 class="dropdown-header">Nossas Categorias</h6>
-                </li>
-                <li><a class="dropdown-item" href="#cafes">Cafés</a></li>
-                <li><a class="dropdown-item" href="#salgados">Salgados</a></li>
-                <li><a class="dropdown-item" href="#tortas">Tortas</a></li>
-                <li><a class="dropdown-item" href="#cookies">Cookies</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <div class="container text-center mt-5">
-    <h1 class="display-4">O café ideal para você</h1>
-    <p class="lead">Seja você amante de um café intenso e marcante ou fã de notas suaves e delicadas, nossa
-      cafeteria gourmet oferece o equilíbrio perfeito para cada paladar. Descubra aromas exclusivos e viva uma
-      experiência única em cada xícara.</p>
-  </div>
-
-  <div class="container mt-5">
-
-    <section id="cafes" class="mb-5">
-      <h2 class="text-center mb-4 titulo-secao">Nossos Cafés Especiais!</h2>
-
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/Expresso.png" class="card-img-top" alt="Expresso">
-            <div class="card-body">
-              <h5 class="card-title">Expresso</h5>
-              <p class="card-text">Café intenso e concentrado, preparado sob alta pressão para extrair o
-                máximo de sabor em um pequeno gole.</p>
-              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard1">Ver
-                mais</a>
+ <body>
+    <div class="container mt-3 rounded-3"> 
+        <nav class="navbar navbar-expand-lg"> 
+            <div class="container-fluid"> 
+                <a class="navbar-brand" href="#">
+                    <img src="caminho/para/sua/logo.png" alt="Logo Cafeteria" width="30" height="24" class="d-inline-block align-text-top">
+                    TSI Café
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Retornar ao Início</a> </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Menu</a> </li>
+                        <li class="nav-item">
+                    </ul>
+                </div>
             </div>
-          </div>
-        </div>
+        </nav>
+    </div>
+ <!-- FIM DA NAVBAR -->
+
+<!-- CONTEUDO DA PAGINA: INICIO -->
+
+    <!-- SEÇÃO DE BOAS-VINDAS -->
+    <div class="container text-center mt-5">
+        <h1 class="display-4">O café ideal para você</h1>
+        <p class="lead">Seja você amante de um café intenso e marcante ou fã de notas suaves e delicadas, nossa
+            cafeteria gourmet oferece o equilíbrio perfeito para cada paladar. Descubra aromas exclusivos e viva uma
+            experiência única em cada xícara.</p>
+    </div>
+
+    <!-- SEÇÃO DE CARDS -->
+    <div class="container mt-5">
+        <div class="row">
+
+            <!-- CARD 1: "EXPRESSO" -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Expresso.png" class="card-img-top" alt="Expresso">
+                    <div class="card-body">
+                        <h5 class="card-title">Expresso</h5>
+                        <p class="card-text">Café intenso e concentrado, preparado sob alta pressão para extrair o
+                            máximo de sabor em um pequeno gole.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard1">Ver
+                            mais</a>
+                    </div>
+                </div>
+            </div>
 
         <div class="col-md-4 mb-4">
           <div class="card">
@@ -119,54 +111,58 @@
           </div>
         </div>
 
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/Macchiato.png" class="card-img-top" alt="Macchiato">
-            <div class="card-body">
-              <h5 class="card-title">Macchiato</h5>
-              <p class="card-text">Espresso com um toque de espuma de leite, mantendo o sabor forte com leve
-                suavização.</p>
-              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard5">Ver
-                mais</a>
+            <!-- CARD 5: "MACCHIATO" -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Macchiato.png" class="card-img-top" alt="Macchiato">
+                    <div class="card-body">
+                        <h5 class="card-title">Macchiato</h5>
+                        <p class="card-text">Espresso com um toque de espuma de leite, mantendo o sabor forte com leve
+                            suavização.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard5">Ver
+                            mais</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
 
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/Mocha.png" class="card-img-top" alt="Mocha">
-            <div class="card-body">
-              <h5 class="card-title">Mocha</h5>
-              <p class="card-text">Espresso combinado com chocolate e leite vaporizado, para os amantes de
-                café com sabor adocicado e cremoso.</p>
-              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard6">Ver
-                mais</a>
+            <!-- CARD 6: "MOCHA" -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/Mocha.png" class="card-img-top" alt="Mocha">
+                    <div class="card-body">
+                        <h5 class="card-title">Mocha</h5>
+                        <p class="card-text">Espresso combinado com chocolate e leite vaporizado, para os amantes de
+                            café com sabor adocicado e cremoso.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCard6">Ver
+                            mais</a>
+                    </div>
+                </div>
             </div>
-          </div>
+
         </div>
-      </div>
-    </section>
-   
-  </div>
-  <div class="modal fade" id="modalCard1" tabindex="-1" aria-labelledby="modalCard1Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalCard1Label">Mais sobre: Expresso</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body">
-          O clássico italiano. Preparado sob 9 bar de pressão e extraído em cerca de 25 a 30 segundos, o
-          espresso concentra o máximo de sabor e aroma do café em apenas 25 a 30 ml. A moagem é bem fina,
-          resultando em uma bebida encorpada, intensa e com a tradicional crema dourada na superfície. É a
-          base para diversas outras bebidas, como cappuccino, latte e macchiato.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-        </div>
-      </div>
     </div>
-  </div>
+
+    <!-- MODAIS -->
+    <!-- MODAL CARD 1 -->
+    <div class="modal fade" id="modalCard1" tabindex="-1" aria-labelledby="modalCard1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard1Label">Mais sobre: Expresso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    O clássico italiano. Preparado sob 9 bar de pressão e extraído em cerca de 25 a 30 segundos, o
+                    espresso concentra o máximo de sabor e aroma do café em apenas 25 a 30 ml. A moagem é bem fina,
+                    resultando em uma bebida encorpada, intensa e com a tradicional crema dourada na superfície. É a
+                    base para diversas outras bebidas, como cappuccino, latte e macchiato.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
   <div class="modal fade" id="modalCard2" tabindex="-1" aria-labelledby="modalCard2Label" aria-hidden="true">
     <div class="modal-dialog">
@@ -265,71 +261,314 @@
     </div>
   </div>
 
-
-  <footer class="pt-5 pb-4">
-    <div class="container text-center text-md-start">
-      <div class="row text-center text-md-start">
-
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold">TSI Café</h5>
-          <p>O melhor café do Campus, com grãos selecionados e um lugar aconchegante para todos os amantes de café!.</p>
+    <!-- MODAL CARD 7 -->
+    <div class="modal fade" id="modalCard7" tabindex="-1" aria-labelledby="modalCard1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard7Label">Mais sobre: Coxinha de frango</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Massa feita de batata e farinha de trigo, cozida em caldo de frango para absorver sabor. O recheio é
+                    preparado com peito de frango desfiado, temperado com cebola, alho e cheiro-verde. Modelada em
+                    formato de gota, empanada com farinha de rosca e frita até dourar, resulta em uma casquinha crocante
+                    por fora e maciez por dentro.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold">Links Rápidos</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" style="text-decoration: none;"> Menu Completo</a></li>
-            <li><a href="#" style="text-decoration: none;"> Nossas Lojas</a></li>
-            <li><a href="#" style="text-decoration: none;"> Trabalhe Conosco</a></li>
-            <li><a href="#" style="text-decoration: none;"> Perguntas Frequentes (FAQ)</a></li>
-            <li><a href="#" style="text-decoration: none;"> Política de Privacidade</a></li>
-          </ul>
+    <!-- MODAL CARD 8 -->
+    <div class="modal fade" id="modalCard8" tabindex="-1" aria-labelledby="modalCard8Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard2Label">Mais sobre: Croissant de manteiga</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Tradicional receita francesa feita com camadas de massa de farinha de trigo e manteiga de alta
+                    qualidade, dobradas e laminadas várias vezes para criar folhado perfeito. Fermentação lenta que
+                    desenvolve sabor e textura únicos. Assado em forno pré-aquecido a 200 °C até atingir coloração
+                    dourada e aroma irresistível de manteiga fresca.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold">Endereço</h5>
-          <p><i class="fas fa-home me-3"></i>R. Antônia de Lima Paiva, 155 - Nova Esperança, Parnamirim - RN,
-            59143-455</p>
-        </div>
+    </div>
 
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold">Meios de Contato</h5>
-          <p><a href="tel:+5584981649709" style="text-decoration: none; color: inherit;"><i
-                class="fas fa-phone me-3"></i> (84) 8164-9709</a></p>
-          <a href="https://www.facebook.com/IFRNPAR/?locale=pt_BR" class="btn btn-social mx-1">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.instagram.com/ifrnpar_oficial/?hl=pt" class="btn btn-social mx-1">
-            <i class="fab fa-instagram"></i>
-          </a>
+    <!-- MODAL CARD 9 -->
+    <div class="modal fade" id="modalCard9" tabindex="-1" aria-labelledby="modalCard3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard9Label">Mais sobre: Esfiha de carne</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Massa à base de farinha de trigo, fermento biológico e azeite, aberta em formato triangular ou
+                    redondo. O recheio é preparado com carne moída de primeira, cebola, tomate e tempero sírio. Assada
+                    em forno a 200 °C até a borda dourar, entrega sabor marcante e textura macia.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <!-- MODAL CARD 10 -->
+    <div class="modal fade" id="modalCard10" tabindex="-1" aria-labelledby="modalCard10Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard4Label">Mais sobre: Empada de palmito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Massa preparada com farinha de trigo, manteiga e ovo, resultando em textura que derrete na boca. O
+                    recheio combina palmito picado, creme de leite e temperos suaves. Montada em forminhas individuais e
+                    assada até a superfície dourar levemente.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CARD 11 -->
+    <div class="modal fade" id="modalCard11" tabindex="-1" aria-labelledby="modalCard11Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard5Label">Mais sobre: Pão de queijo mineiro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Receita tradicional mineira preparada com polvilho azedo, ovos, leite e queijo meia cura. A massa é
+                    moldada em pequenas esferas e assada em forno a 180 °C até crescer e formar casquinha dourada. Sabor
+                    marcante de queijo e textura elástica por dentro, ideal para acompanhar café fresco.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CARD 12-->
+    <div class="modal fade" id="modalCard12" tabindex="-1" aria-labelledby="modalCard12Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard6Label">Mais sobre: Pastel de queijo com calabresa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Massa tradicional de pastel aberta bem fina e recheada com linguiça calabresa moída e queijo
+                    muçarela. Frita em óleo quente até dourar e estalar ao toque. Combinação de sabor defumado e
+                    cremosidade irresistível.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CARD 13 -->
+    <div class="modal fade" id="modalCard13" tabindex="-1" aria-labelledby="modalCard13Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard1Label">Mais sobre: Torta de café</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Base crocante de biscoito amanteigado, recheio cremoso feito com café forte, leite condensado e
+                    creme de leite. Finalizada com chantilly e raspas de chocolate. Gelada por algumas horas para
+                    firmar, resulta em sobremesa equilibrada, aromática e sofisticada.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CARD 14 -->
+    <div class="modal fade" id="modalCard14" tabindex="-1" aria-labelledby="modalCard14Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard2Label">Mais sobre: Torta de limão</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Base de biscoito triturado e manteiga, recheio de creme de limão feito com leite condensado e suco
+                    de limão fresco. Coberta com merengue dourado no forno ou raspas de limão. Textura crocante e
+                    cremosa que agrada todos os paladares.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CARD 15 -->
+    <div class="modal fade" id="modalCard15" tabindex="-1" aria-labelledby="modalCard15Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard3Label">Mais sobre: Torta de morango fresco</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Massa amanteigada assada, recheada com creme de baunilha ou creme de confeiteiro. Coberta com
+                    morangos frescos fatiados e calda de geléia para dar brilho e sabor extra. Sobremesa leve, ideal
+                    para dias quentes e ocasiões especiais.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL CARD 16 -->
+    <div class="modal fade" id="modalCard16" tabindex="-1" aria-labelledby="modalCard16Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard1Label">Mais sobre: Cookie clássico com gotas de chocolate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Feito com farinha de trigo, manteiga, açúcar mascavo e cristal. As gotas de chocolate são misturadas à massa e assadas em forno médio. Textura macia no centro e bordas levemente crocantes.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CARD 17 -->
+    <div class="modal fade" id="modalCard17" tabindex="-1" aria-labelledby="modalCard17Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard2Label">Mais sobre: Cookie red velvet</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Massa com cacau, corante vermelho e essência de baunilha. Chocolate branco picado é incorporado à massa antes de assar. O contraste de cores e sabores cria um cookie marcante e delicado.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CARD 18 -->
+    <div class="modal fade" id="modalCard18" tabindex="-1" aria-labelledby="modalCard18Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCard3Label">Mais sobre: Cookie de amendoim</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Massa preparada com manteiga de amendoim natural, açúcar mascavo e ovos. Assado em forno médio, resulta em um cookie macio no centro e sabor marcante de amendoim torrado.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- CONTEUDO DA PAGINA: FIM -->
+
+    <!-- INICIO DO RODAPE -->
+    <footer class="pt-5 pb-4"> 
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">TSI Café</h5>
+                    <p>O melhor café do Campus, com grãos selecionados e um lugar aconchegante para todos os amantes de café!.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="text-decoration: none;"> Menu Completo</a></li>
+                        <li><a href="#" style="text-decoration: none;"> Nossas Lojas</a></li>
+                        <li><a href="#" style="text-decoration: none;"> Trabalhe Conosco</a></li>
+                        <li><a href="#" style="text-decoration: none;"> Perguntas Frequentes (FAQ)</a></li>
+                        <li><a href="#" style="text-decoration: none;"> Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Endereço</h5>
+                    <p><i class="fas fa-home me-3"></i>R. Antônia de Lima Paiva, 155 - Nova Esperança, Parnamirim - RN, 59143-455
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Meios de Contato</h5>
+                    <a href="#" class="btn btn-social mx-1">
+                        <i class="fab fa-facebook-f"></i> 
+                    </a>
+                    <a href="#" class="btn btn-social mx-1">
+                        <i class="fab fa-instagram"></i> 
+                    </a>
+                    <a href="#" class="btn btn-social mx-1">
+                        <i class="fab fa-twitter"></i> 
+                    </a>
+                </div>
 
       </div>
 
       <hr class="mb-4">
 
-      <div class="row align-items-center">
-        <div class="col-md-7 col-lg-8">
-          <p class="text-center text-md-start">© 2025 TSI Café. Todos os direitos reservados.</p>
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-start">© 2025 TSI Café. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-end">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" style="text-decoration: none;"><i class="fab fa-cc-visa"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" style="text-decoration: none;"><i class="fab fa-cc-mastercard"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" style="text-decoration: none;"><i class="fab fa-paypal"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-5 col-lg-4">
-          <div class="text-center text-md-end">
-            <ul class="list-unstyled list-inline">
-              <li class="list-inline-item">
-                <a href="#" style="text-decoration: none;"><i class="fab fa-cc-visa"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" style="text-decoration: none;"><i class="fab fa-cc-mastercard"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" style="text-decoration: none;"><i class="fab fa-paypal"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-</body>
+    </footer>
+        
+    <!-- Script do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeB+tHz/K6C6q+8LzI44iT/Yc6tqY6e4z" crossorigin="anonymous"></script>
 
+<!-- FIM DO RODAPE -->
+
+ </body>
 </html>

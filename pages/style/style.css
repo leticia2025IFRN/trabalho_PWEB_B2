@@ -36,6 +36,29 @@ body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 251, 206, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
+/* ===== CARROSSEL ===== */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Texto do carrossel */
+.carousel-caption h5 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2rem;
+  background: rgba(69, 26, 10, 0.7); /* Marrom com transparência */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel-caption p {
+  background: rgba(255, 251, 206, 0.8); /* Bege com transparência */
+  color: #451a0a;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
 /* ===== SEÇÃO DE BOAS-VINDAS (HERO) ===== */
 .container.text-center.mt-5 h1 {
     font-family: Georgia, 'Times New Roman', serif;
@@ -49,6 +72,23 @@ body {
 }
 
 /* ===== CARDS ===== */
+
+/* Título da seção */
+.section-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2rem;
+  color: #451a0a;
+  margin-bottom: 0.5rem;
+}
+
+.section-divider {
+  width: 60px;
+  height: 3px; /* espessura */
+  background-color: #451a0a; /* cor marrom café */
+  border: none;
+  margin: 0 auto 2rem auto;
+}
+
 .card {
     border: none;
     border-radius: 15px;
