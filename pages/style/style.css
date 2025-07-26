@@ -1,74 +1,126 @@
 /* ===== BASE DO SITE ===== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  background-color: #fffbce; /* Bege claro */
-  color: #451a0a; /* Marrom café */
+    background-color: #fffbce; /* Bege claro */
+    color: #451a0a; /* Marrom café */
+}
+
+/* ===== NAVBAR ===== */
+.container.mt-3.rounded-3 {
+    background-color: #451a0a !important; /* Marrom café para o fundo da navbar */
+}
+
+.navbar-nav .nav-link,
+.navbar-brand { 
+    color: #fffbce !important; /* Cor clara para links e marca na navbar */
+}
+
+.navbar-nav .btn { 
+    color: #fffbce !important; 
+    border-color: #fffbce !important; 
+    background-color: transparent !important; 
+}
+
+.navbar-nav .btn:hover {
+    background-color: #fffbce !important; 
+    color: #451a0a !important; 
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 251, 206, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
 /* ===== SEÇÃO DE BOAS-VINDAS (HERO) ===== */
 .container.text-center.mt-5 h1 {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 3rem;
-  color: #451a0a;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 3rem;
+    color: #451a0a;
 }
 
 .container.text-center.mt-5 p {
-  font-size: 1.2rem;
-  color: #6e3d2b;
+    font-size: 1.2rem;
+    color: #6e3d2b;
 }
 
 /* ===== CARDS ===== */
 .card {
-  border: none;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease;
-  background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+    background-color: #ffffff;
 }
 .card:hover {
-  transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 /* Título do card */
 .card-title {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 1.5rem;
-  color: #451a0a;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    color: #451a0a;
 }
 
 /* Texto do card */
 .card-text {
-  color: #6e3d2b;
+    color: #6e3d2b;
 }
 
 /* Botão "Ver mais" */
 .btn-primary {
-  background-color: #451a0a; /* Marrom café */
-  border: none;
-  font-weight: bold;
+    background-color: #451a0a; /* Marrom café */
+    border: none;
+    font-weight: bold;
 }
 .btn-primary:hover {
-  background-color: #6e3d2b; /* Marrom mais claro no hover */
+    background-color: #6e3d2b; /* Marrom mais claro no hover */
 }
 
 /* ===== MODAL ===== */
 .modal-content {
-  border-radius: 12px;
+    border-radius: 12px;
 }
 .modal-header {
-  background-color: #451a0a;
-  color: #fffbce;
-  border-bottom: none;
-  font-family: Georgia, 'Times New Roman', serif;
+    background-color: #451a0a;
+    color: #fffbce;
+    border-bottom: none;
+    font-family: Georgia, 'Times New Roman', serif;
 }
 .modal-body {
-  font-size: 1rem;
-  color: #451a0a;
+    font-size: 1rem;
+    color: #451a0a;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+    background-color: #451a0a !important; /* Marrom café para o fundo do rodapé */
+}
+
+footer p,
+footer a,
+footer h5 {
+    color: #fffbce !important; /* Cor clara para texto e links no rodapé */
+}
+
+footer .btn-social,
+footer .list-inline-item a { 
+    color: #fffbce !important; 
+    border-color: #fffbce !important; 
+    background-color: transparent !important; 
+}
+
+footer .btn-social:hover {
+    background-color: #fffbce !important; 
+    color: #451a0a !important; 
+}
+
+.titulo-secao {
+    color: #451a0a; 
 }
