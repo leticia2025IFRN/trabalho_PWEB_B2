@@ -1,0 +1,131 @@
+/* ===== BASE DO SITE ===== */
+/* Importar fontes: */
+/* Inter Sans-serif Font - Para usar: "Inter", sans-serif*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* Libre Baskerville Serif Font - Para usar: "Libre Baskerville", serif*/
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fffbce; /* Bege claro */
+  color: #451a0a; /* Marrom café */
+  font-style: normal;
+}
+
+.rodape-titulo {
+  font-family: "Libre Baskerville", serif, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* ===== CARROSSEL ===== */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Texto do carrossel */
+.carousel-caption h5 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  background: rgba(69, 26, 10, 0.7); /* Marrom com transparência */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel-caption p {
+  background: rgba(255, 251, 206, 0.8); /* Bege com transparência */
+  color: #451a0a;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* ===== SEÇÃO DE BOAS-VINDAS (HERO) ===== */
+.container.text-center.mt-5 h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3rem;
+  color: #451a0a;
+}
+
+.container.text-center.mt-5 p {
+  font-size: 1.2rem;
+  color: #6e3d2b;
+}
+
+/* ===== CARDS ===== */
+
+/* Título da seção */
+.section-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  color: #451a0a;
+  margin-bottom: 0.5rem;
+}
+
+.section-divider {
+  width: 60px;
+  height: 3px; /* espessura */
+  background-color: #451a0a; /* cor marrom café */
+  border: none;
+  margin: 0 auto 2rem auto;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+  background-color: #ffffff;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Título do card */
+.card-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  color: #451a0a;
+}
+
+/* Texto do card */
+.card-text {
+  color: #6e3d2b;
+}
+
+/* Botão "Ver mais" */
+.btn-primary {
+  background-color: #451a0a; /* Marrom café */
+  border: none;
+  font-weight: bold;
+}
+.btn-primary:hover {
+  background-color: #6e3d2b; /* Marrom mais claro no hover */
+}
+
+/* ===== MODAL ===== */
+.modal-content {
+  border-radius: 12px;
+}
+.modal-header {
+  background-color: #451a0a;
+  color: #fffbce;
+  border-bottom: none;
+  font-family: Georgia, "Times New Roman", serif;
+}
+.modal-body {
+  font-size: 1rem;
+  color: #451a0a;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  background-color: #fff2b2;
+}

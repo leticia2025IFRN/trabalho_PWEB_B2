@@ -1,123 +1,410 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap 5 -->
     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-        crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
-    <link rel="stylesheet" href="public/style.css" />
-    
-    <title>TSI Café</title>
-</head>
-<body>
-    <div class="container mt-3 rounded-3"> 
-        <nav class="navbar navbar-expand-lg"> 
-            <div class="container-fluid"> 
-                <a class="navbar-brand" href="#">
-                    <img src="caminho pra a logo" alt="Logo Cafeteria" width="30" height="24" class="d-inline-block align-text-top">
-                    TSI Café
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre Nós</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn ms-2" href="shop.html">Faça seu Pedido!</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <main style="min-height: 50vh; padding: 2rem;">
-        <h1>Bem-vindo à TSI Café!</h1>
-        <p>Espaço pra vc colocarem oq quiserem sobre a loja e tals</p>
-        <p>LEMBRE DE COLOCAR O CAMINHO PRA LOGO NA LINHA 24</p>
-    </main>
-
-    <footer class="pt-5 pb-4"> 
-        <div class="container text-center text-md-start">
-            <div class="row text-center text-md-start">
-
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold">TSI Café</h5>
-                    <p>O melhor café do Campus, com grãos selecionados e um lugar aconchegante para todos os amantes de café!</p>
-                </div>
-
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold">Links Rápidos</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" style="text-decoration: none;"> Menu Completo</a></li>
-                        <li><a href="#" style="text-decoration: none;"> Nossas Lojas</a></li>
-                        <li><a href="#" style="text-decoration: none;"> Trabalhe Conosco</a></li>
-                        <li><a href="#" style="text-decoration: none;"> Perguntas Frequentes (FAQ)</a></li>
-                        <li><a href="#" style="text-decoration: none;"> Política de Privacidade</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold">Endereço</h5>
-                    <p><i class="fas fa-home me-3"></i>R. Antônia de Lima Paiva, 155 - Nova Esperança, Parnamirim - RN, 59143-455
-                </div>
-
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold">Meios de Contato</h5>
-                    <a href="#" class="btn btn-social mx-1">
-                        <i class="fab fa-facebook-f"></i> 
-                    </a>
-                    <a href="#" class="btn btn-social mx-1">
-                        <i class="fab fa-instagram"></i> 
-                    </a>
-                    <a href="#" class="btn btn-social mx-1">
-                        <i class="fab fa-twitter"></i> 
-                    </a>
-                </div>
-
-            </div>
-
-            <hr class="mb-4">
-
-            <div class="row align-items-center">
-                <div class="col-md-7 col-lg-8">
-                    <p class="text-center text-md-start">© 2025 TSI Café. Todos os direitos reservados.</p>
-                </div>
-                <div class="col-md-5 col-lg-4">
-                    <div class="text-center text-md-end">
-                        <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item">
-                                <a href="#" style="text-decoration: none;"><i class="fab fa-cc-visa"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" style="text-decoration: none;"><i class="fab fa-cc-mastercard"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" style="text-decoration: none;"><i class="fab fa-paypal"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../public/home.css" />
+    <title>Bem-vindo(a) ao TSI Café!</title>
+  </head>
+  <body>
+    <!-- Barra de Navegação -->
+    <div id="barra-navegacao" class="container mt-3 rounded-3">
+      <nav class="navbar navbar-expand-lg fs-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="../public/img/TSI Café LOGO (TRANSPARENTE).png"
+              alt="Logo do TSI Café"
+              width="30px"
+              height="30px"
+            />
+            TSI Café
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Início</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn ms-2" href="shop.html"
+                  >Faça seu Pedido!</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </div>
+    <!-- Conteúdo/Página Principal -->
+    <!-- Banners (CARROSSEL SLIDES) -->
+    <div
+      id="apresentacao_cafeteria"
+      class="carousel slide carousel-fade mt-0 mb-5"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#apresentacao_cafeteria"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#apresentacao_cafeteria"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#apresentacao_cafeteria"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Slide 01 -->
+        <div class="carousel-item active">
+          <img
+            src="../public/img/Conheça.png"
+            class="d-block w-100"
+            alt="Panela com grãos de café torrados com uma mão segurando uma concha de metal para mexer."
+            style="width: auto; height: 570px"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h4 class="banner-home-titulo">
+              Conheça como o nosso café é feito
+            </h4>
+            <p class="banner-home-descricao">
+              Trabalhamos com grãos selecionados, de origem única e torra
+              artesanal. Nossos baristas, ou como gostamos de chamar, nossos
+              "Engenheiros de Cafeína", estão prontos para preparar o melhor
+              café para auxiliar no seu desenvolvimento.
+            </p>
+          </div>
+        </div>
+        <!-- Slide 02 -->
+        <div class="carousel-item">
+          <img
+            src="../public/img/Aconchegue-se.png"
+            class="d-block w-100"
+            alt="Conjunto de três amigos em uma mesa aproveitando o café, com um deles usando um laptop."
+            style="width: auto; height: 570px"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h4 class="banner-home-titulo">
+              Aconchegue-se com o nosso serviço de qualidade
+            </h4>
+            <p class="banner-home-descricao">
+              Seja para debugar um código complexo, compilar um projeto da
+              faculdade ou simplesmente sincronizar com a comunidade, o TSI Café
+              é a sua casa. Puxe uma cadeira, conecte seu notebook e vamos,
+              juntos, construir algo incrível.
+            </p>
+          </div>
+        </div>
+        <!-- Slide 03 -->
+        <div class="carousel-item">
+          <img
+            src="../public/img/Desfrute.png"
+            class="d-block w-100"
+            alt="Uma estante enorme de livros com uma escada de suporte de madeira a frente."
+            style="width: auto; height: 570px"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h4 class="banner-home-titulo">Desfrute de nossas parcerias</h4>
+            <p class="banner-home-descricao">
+              Nosso ecossistema vai além do café. Em <i>collab</i> com as
+              principais empresas de tecnologia, startups e universidades,
+              compilamos eventos e workshops exclusivos para a nossa comunidade.
+              Além disso, nossas parcerias com livrarias e jornais garantem que
+              você sempre tenha acesso a conhecimento e cultura de qualidade,
+              sincronizando o melhor dos mundos para alimentar sua criatividade
+              e seus projetos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Botões de navegação dos slides -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#apresentacao_cafeteria"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#apresentacao_cafeteria"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+    <main class="container mb-3 w-100">
+      <!-- Seção "Sobre nós" -->
+      <section id="sobre-container" class="container row">
+        <article class="col w-50 text-start">
+          <h1 class="secao-titulo">Sobre nós</h1>
+          <p class="descricao">
+            Em um mundo movido a código e cafeína, nós criamos a TSI Café e,
+            mais do que uma simples cafeteria, somos um estabelecimento
+            projetado do zero para a comunidade de Tecnologia da Informação
+            (TI). Desde 2025, entendemos que as melhores ideias, os códigos mais
+            limpos e os projetos mais inovadores surgem desta combinação
+            perfeita: um ambiente inspirador, refeição de alta qualidade e uma
+            comunidade que fala a sua língua.
+          </p>
+          <p class="descricao">
+            Nossa missão é ser o seu "terceiro espaço" — aquele lugar essencial
+            entre o escritório, a faculdade e o lar, onde estudantes e
+            profissionais de TI podem se conectar, criar e recarregar as
+            energias.
+          </p>
+          <p class="descricao">
+            Cada detalhe do nosso ambiente foi planejado para maximizar seu
+            conforto e produtividade. Com isso, esqueça a caça por tomadas ou a
+            preocupação com o Wi-Fi instável. Aqui, a sua única preocupação é
+            dar "git push" no seu próximo grande projeto.
+          </p>
+        </article>
+        <figure class="col w-50">
+          <img
+            class="rounded-5 float-start w-50 p-3"
+            src="../public/img/Espaço 03 (EXTRAS).png"
+            alt="Espaço de atendimento com o laptop e a parede preenchida de adesivos diversos, além de um menu na parede com todos os itens disponíveis."
+          />
+          <img
+            class="rounded-5 float-end w-50 p-3"
+            src="../public/img/Espaço 01 (EXTRAS).png"
+            alt="Duas mulheres negras, uma jovem e uma idosa, sentadas na frente de um estabelecimento, enquanto coversam e tomam café."
+          />
+          <img
+            class="rounded-5 mx-auto d-block w-50 p-3"
+            src="../public/img/Espaço 02 (EXTRAS).png"
+            alt="Uma máquina de café profissional sendo usada por um homem calcasiano preparando uma xícara de café."
+          />
+        </figure>
+      </section>
+      <!-- Seção "Refeições" -->
+      <section id="refeicoes-container" class="container row p-5">
+        <figure class="col w-25">
+          <img
+            class="rounded-5 mx-auto d-block align-middle w-75 p-1"
+            src="../public/img/Refeição (EXTRAS).png"
+            alt="Em destaque, um prato cheio com ovos, pão, feijão e bacon, além de um copo de café e, ao lado, um laptop."
+          />
+        </figure>
+        <article class="col w-50 text-center">
+          <h1 class="secao-titulo">Refeições</h1>
+          <p class="descricao">
+            Nossas refeições são de altíssima qualidade, avaliados por diversos
+            críticos de culinária. Temos de todos os tipos, desde um café da
+            manhã básico até um jantar bem caprichado, oferecemos o melhor para
+            os profissionais e estudantes da área de TI.
+          </p>
+        </article>
+        <figure class="col w-25">
+          <img
+            class="rounded-5 mx-auto d-block w-75 p-1"
+            src="../public/img/Café gelado (EXTRAS).png"
+            alt="Dois copos de vidro transparente de café com leite gelado."
+          />
+        </figure>
+      </section>
+      <!-- Seção "Serviços" -->
+      <section id="servicos-container" class="container row">
+        <figure class="col w-50">
+          <img
+            class="rounded-5 float-start w-50 p-3"
+            src="../public/img/Campos de Café (EXTRAS).png"
+            alt="Copo de café sendo servido em frente a uma muda de café."
+          />
+          <img
+            class="rounded-5 float-end w-50 p-3"
+            src="../public/img/Computador (EXTRAS).png"
+            alt="Um laptop sendo usado por uma pessoa com um caderno aberto embaixo dos braços."
+          />
+          <img
+            class="rounded-5 float-start w-50 p-3"
+            src="../public/img/Evento 01 (EXTRAS).png"
+            alt="Duas xícaras com formato de coração cheios de café, acompanhados de macarones coloridos."
+          />
+          <img
+            class="rounded-5 float-end w-50 p-3"
+            src="../public/img/Evento 02 (EXTRAS).png"
+            alt="Uma caneca com árvore de natal como desenho cheio de café, ao lado de um conjunto de canela e uma carta de Natal."
+          />
+        </figure>
+        <article class="col w-50 text-end">
+          <h1 class="secao-titulo">Serviços</h1>
+          <p class="descricao">
+            No Terminal Café, o serviço é a nossa interface com o usuário, e
+            nosso objetivo é que ela seja a mais intuitiva e amigável possível.
+            Nossa equipe é apaixonada por café e fascinada por tecnologia. Eles
+            entendem quando você precisa de silêncio e quando está aberto para
+            uma conversa sobre a última versão do seu framework favorito.
+          </p>
+          <p class="descricao">
+            Por aqui, mais do que servir um bom café, queremos construir uma
+            comunidade. Promovemos reuniões, eventos especiais, workshops e
+            "Demo Days", onde estudantes, desenvolvedores, empresas e startups
+            podem apresentar seus projetos para o público.
+          </p>
+          <p class="descricao">
+            Portando, aproveite uma conexão Wi-Fi de fibra óptica de altíssima
+            velocidade e baixa latência, além de mesas e bancadas equipadas com
+            múltiplas tomadas e portas USB-C para evitar frustração com os
+            <i>pings</i> altos e com a bateria fraca dos seus dispositivos
+            móveis, porque sabemos que esse cenário pode ser mais estressante
+            quanto um bug em produção.
+          </p>
+        </article>
+      </section>
+    </main>
+    <!-- Rodepé da Página -->
+    <footer class="pt-5 pb-4">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <!-- Resumo da Marca -->
+          <figure class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+            <img
+              id="logo-tsi-cafe-maior"
+              class="p-0 m-0 w-100"
+              src="../public/img/TSI Café LOGO (TRANSPARENTE).png"
+              alt="Logo do TSI Café"
+            />
+          </figure>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="mb-4 rodape-titulo">TSI Café</h5>
+            <p>
+              O melhor café do Campus, com grãos selecionados e um lugar
+              aconchegante para todos os amantes de café e de tecnologia!
+            </p>
+          </div>
+          <!-- Liks de Acesso Rápidos -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 rodape-titulo">Links Rápidos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" style="text-decoration: none"> Menu Completo</a>
+              </li>
+              <li>
+                <a href="#" style="text-decoration: none"> Nossas Lojas</a>
+              </li>
+              <li>
+                <a href="#" style="text-decoration: none"> Trabalhe Conosco</a>
+              </li>
+              <li>
+                <a href="#" style="text-decoration: none">
+                  Perguntas Frequentes (FAQ)</a
+                >
+              </li>
+              <li>
+                <a href="#" style="text-decoration: none">
+                  Política de Privacidade</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Endereço do Estabelecimento -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 rodape-titulo">Endereço</h5>
+            <p>
+              <i class="fas fa-home me-3"></i>R. Antônia de Lima Paiva, 155 -
+              Nova Esperança, Parnamirim - RN, 59143-455
+            </p>
+          </div>
+          <!-- Meios de Comunicação / Redes Sociais -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 rodape-titulo">Meios de Contato</h5>
+            <a href="#" class="btn btn-social mx-1">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="btn btn-social mx-1">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="btn btn-social mx-1">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <!-- Coloque também o GitHub aqui, com o link para a página do trabalho. -->
+          </div>
+        </div>
+        <!-- Direitos autorais -->
+        <hr class="mb-4" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="text-center text-md-start">
+              © 2025 TSI Café. Todos os direitos reservados.
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-end">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="#" style="text-decoration: none"
+                    ><i class="fab fa-cc-visa"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" style="text-decoration: none"
+                    ><i class="fab fa-cc-mastercard"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" style="text-decoration: none"
+                    ><i class="fab fa-paypal"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeB+tHz/K6C6q+8LzI44iT/Yc6tqY6e4z" crossorigin="anonymous"></script>
-</body>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"
+  ></script>
 </html>
