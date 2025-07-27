@@ -18,6 +18,19 @@ body {
   font-style: normal;
 }
 
+#barra-navegacao .navbar {
+    border-bottom: 2px solid #451a0a;
+    background-color:  #fffbce;
+}
+.navbar-nav .nav-link {
+    color: #451a0a; 
+}
+
+.navbar-nav .nav-link.btn {
+    color: #fffbce; 
+    background-color: #451a0a;
+}
+
 .navbar-brand {
   color: #451a0a;
 }

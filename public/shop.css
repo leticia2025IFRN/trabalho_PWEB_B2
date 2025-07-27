@@ -1,52 +1,83 @@
 /* ===== BASE DO SITE ===== */
 /* Importar fontes: */
 /* Inter Sans-serif Font - Para usar: "Inter", sans-serif*/
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 /* Libre Baskerville Serif Font - Para usar: "Libre Baskerville", serif*/
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif, Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: #fffbce; /* Bege claro */
-    color: #451a0a; /* Marrom café */
+  background-color: #fffbce;
+  color: #451a0a;
+  font-style: normal;
 }
 
-/* ===== NAVBAR ===== */
-.container.mt-3.rounded-3 {
-    background-color: #451a0a !important; /* Marrom café para o fundo da navbar */
+#barra-navegacao .navbar {
+    border-bottom: 2px solid #451a0a;
+    background-color: #fffbce; /* Fundo bege claro do navbar */
 }
 
-.navbar-nav .nav-link,
-.navbar-brand { 
-    color: #fffbce !important; /* Cor clara para links e marca na navbar */
+.navbar-brand {
+  color: #451a0a; /* Cor do texto do logo "TSI Café" */
+  font-family: "Libre Baskerville", serif, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.navbar-nav .btn { 
-    color: #fffbce !important; 
-    border-color: #fffbce !important; 
-    background-color: transparent !important; 
+#barra-navegacao .navbar-nav .nav-link {
+    color: #451a0a;
 }
 
-.navbar-nav .btn:hover {
-    background-color: #fffbce !important; 
-    color: #451a0a !important; 
+#barra-navegacao .navbar-nav .nav-link:hover {
+    color: #6e3d2b; /* Um tom de marrom mais claro */
 }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 251, 206, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+#barra-navegacao .navbar-nav .nav-link.active {
+    color: #451a0a;
 }
+
+.navbar-nav .nav-link.btn {
+    color: #fffbce; 
+    background-color: #451a0a;
+    border-color: #451a0a;
+}
+
+.navbar-nav .nav-link.btn:hover {
+    background-color: #6e3d2b;
+    border-color: #6e3d2b;
+}
+
+#barra-navegacao .dropdown-menu .dropdown-item {
+    color: #451a0a; /* Cor marrom para os itens do dropdown */
+}
+
+#barra-navegacao .dropdown-menu .dropdown-item:hover,
+#barra-navegacao .dropdown-menu .dropdown-item:focus {
+    color: #fffbce;
+    background-color: #451a0a;
+}
+
 
 /* ===== CARROSSEL ===== */
 .carousel-item img {
-  height: 400px;
+  height: 550px;
+  max-height: 650px;
   object-fit: cover;
+  object-position: center;
+}
+
+#carouselCafe .carousel-item {
+  min-height: 50px;
+}
+
+.carousel-caption {
+  padding-bottom: 3rem;
 }
 
 /* Texto do carrossel */
@@ -67,14 +98,14 @@ body {
 
 /* ===== SEÇÃO DE BOAS-VINDAS (HERO) ===== */
 .container.text-center.mt-5 h1 {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 3rem;
-    color: #451a0a;
+  font-family: "Libre Baskerville", serif, Georgia, "Times New Roman", serif;
+  font-size: 3rem;
+  color: #451a0a;
 }
 
 .container.text-center.mt-5 p {
-    font-size: 1.2rem;
-    color: #6e3d2b;
+  font-size: 1.2rem;
+  color: #6e3d2b;
 }
 
 /* ===== CARDS ===== */
@@ -97,77 +128,58 @@ body {
 }
 
 .card {
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease;
-    background-color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+  background-color: #fff2b2;
 }
 .card:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 /* Título do card */
 .card-title {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 1.5rem;
-    color: #451a0a;
+  color: #451a0a;
+  font-family: "Libre Baskerville", serif, Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
 }
 
 /* Texto do card */
 .card-text {
-    color: #6e3d2b;
+  color: #6e3d2b;
 }
 
 /* Botão "Ver mais" */
 .btn-primary {
-    background-color: #451a0a; /* Marrom café */
-    border: none;
-    font-weight: bold;
+  background-color: #451a0a; /* Marrom café */
+  color: #fffbce;
+  border: none;
+  font-weight: bold;
 }
 .btn-primary:hover {
-    background-color: #6e3d2b; /* Marrom mais claro no hover */
+  background-color: #6e3d2b; /* Marrom mais claro no hover */
 }
 
 /* ===== MODAL ===== */
 .modal-content {
-    border-radius: 12px;
+  border-radius: 12px;
 }
 .modal-header {
-    background-color: #451a0a;
-    color: #fffbce;
-    border-bottom: none;
-    font-family: Georgia, 'Times New Roman', serif;
+  background-color: #451a0a;
+  color: #fffbce;
+  border-bottom: none;
+  font-family: "Libre Baskerville", serif, Georgia, "Times New Roman", serif;
 }
 .modal-body {
-    font-size: 1rem;
-    color: #451a0a;
+  font-size: 1rem;
+  color: #451a0a;
 }
 
 /* ===== RODAPÉ ===== */
 footer {
-    background-color: #451a0a !important; /* Marrom café para o fundo do rodapé */
-}
-
-footer p,
-footer a,
-footer h5 {
-    color: #fffbce !important; /* Cor clara para texto e links no rodapé */
-}
-
-footer .btn-social,
-footer .list-inline-item a { 
-    color: #fffbce !important; 
-    border-color: #fffbce !important; 
-    background-color: transparent !important; 
-}
-
-footer .btn-social:hover {
-    background-color: #fffbce !important; 
-    color: #451a0a !important; 
-}
-
-.titulo-secao {
-    color: #451a0a; 
+  background-color: #fff2b2;
 }
