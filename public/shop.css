@@ -107,6 +107,7 @@ body {
 /* Botão "Ver mais" */
 .btn-primary {
   background-color: #451a0a; /* Marrom café */
+  color: #fffbce;
   border: none;
   font-weight: bold;
 }
