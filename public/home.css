@@ -40,7 +40,7 @@ body {
 /* Formatação das seções */
 .secao-titulo {
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   font-family: "Libre Baskerville", serif, "Times New Roman", Times, serif;
   font-weight: bold;
   font-style: italic;
@@ -53,8 +53,8 @@ body {
 }
 
 #refeicoes-container {
-  width: 100%;
   background-color: #fff2b2;
+  border-radius: 20px;
 }
 
 .descricao {
