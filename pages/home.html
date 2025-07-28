@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap 5 -->
+    <!-- Bootstrap 5 & Ícones-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <!-- Arquivo CSS -->
     <link rel="stylesheet" href="../public/home.css" />
@@ -346,40 +350,43 @@
               </li>
               <li>
                 <a
-                  class="fora-do-ar"
                   href="#"
-                  style="text-decoration: none; color: #451a0a"
+                  class="link-indisponivel"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalCardWarning"
                 >
                   Nossas Lojas
                 </a>
               </li>
               <li>
                 <a
-                  class="fora-do-ar"
                   href="#"
-                  style="text-decoration: none; color: #451a0a"
+                  class="link-indisponivel"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalCardWarning"
                 >
                   Trabalhe Conosco
                 </a>
               </li>
               <li>
                 <a
-                  class="fora-do-ar"
                   href="#"
-                  style="text-decoration: none; color: #451a0a"
+                  class="link-indisponivel"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalCardWarning"
                 >
                   Perguntas Frequentes (FAQ)
                 </a>
               </li>
               <li>
                 <a
-                  class="liveToastLink"
-                  role="button"
-                  aria-disabled="false"
-                  style="text-decoration: none; color: #451a0a"
+                  href="#"
+                  class="link-indisponivel"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalCardWarning"
                 >
-                  Política de Privacidade
-                </a>
+                  Política de Privacidade</a
+                >
               </li>
             </ul>
           </div>
@@ -480,41 +487,46 @@
         </div>
       </div>
     </footer>
-    <!-- Aviso (Toasts) para links fora do ar -->
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-      <div
-        id="liveToast"
-        class="toast"
-        role="alert"
-        aria-live="assertive"
-        aria-atomic="true"
-      >
-        <div class="toast-header">
-          <img src="..." class="rounded me-2" alt="..." />
-          <strong class="me-auto">Bootstrap</strong>
-          <small>11 mins ago</small>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="toast"
-            aria-label="Close"
-          ></button>
+    <!-- Aviso (Modal) para links fora do ar -->
+    <div
+      class="modal fade"
+      id="modalCardWarning"
+      tabindex="-1"
+      data-bs-backdrop="static"
+      aria-labelledby="modalWarningLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header d-flex" style="border: none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-exclamation-triangle m-1"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"
+              />
+              <path
+                d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"
+              />
+            </svg>
+            <h5 class="modal-title m-1" id="modalWarningLabel">
+              Serviço indisponível no momento.
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
+          </div>
         </div>
-        <div class="toast-body">Hello, world! This is a toast message.</div>
       </div>
     </div>
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-  >
-    const toastTrigger = document.getElementsByClassName('liveToastLink')
-    const toastLiveWarning = document.getElementById('liveToast')
-
-    if (toastTrigger) {
-      const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveWarning)
-      toastTrigger.addEventListener('click', () => {
-        toastBootstrap.show()
-      })
-    }
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </html>
