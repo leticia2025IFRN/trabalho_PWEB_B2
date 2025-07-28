@@ -19,16 +19,16 @@ body {
 }
 
 #barra-navegacao .navbar {
-    border-bottom: 2px solid #451a0a;
-    background-color:  #fffbce;
+  border-bottom: 2px solid #451a0a;
+  background-color: #fffbce;
 }
 .navbar-nav .nav-link {
-    color: #451a0a; 
+  color: #451a0a;
 }
 
 .navbar-nav .nav-link.btn {
-    color: #fffbce; 
-    background-color: #451a0a;
+  color: #fffbce;
+  background-color: #451a0a;
 }
 
 .navbar-brand {
@@ -42,8 +42,7 @@ body {
 }
 
 .navbar-brand,
-.banner-home-titulo,
-.rodape-titulo {
+.banner-home-titulo {
   font-family: "Libre Baskerville", serif, "Times New Roman", Times, serif;
   font-weight: bold;
   font-style: italic;
@@ -77,4 +76,9 @@ body {
 /* ===== RODAPÉ ===== */
 footer {
   background-color: #fff2b2;
+}
+
+.rodape-titulo {
+  font-family: "Libre Baskerville", serif, "Times New Roman", Times, serif;
+  font-weight: bold;
 }
