@@ -19,8 +19,8 @@ body {
 }
 
 #barra-navegacao .navbar {
-    border-bottom: 2px solid #451a0a;
-    background-color: #fffbce; /* Fundo bege claro do navbar */
+  border-bottom: 2px solid #451a0a;
+  background-color: #fffbce; /* Fundo bege claro do navbar */
 }
 
 .navbar-brand {
@@ -31,38 +31,37 @@ body {
 }
 
 #barra-navegacao .navbar-nav .nav-link {
-    color: #451a0a;
+  color: #451a0a;
 }
 
 #barra-navegacao .navbar-nav .nav-link:hover {
-    color: #6e3d2b; /* Um tom de marrom mais claro */
+  color: #6e3d2b; /* Um tom de marrom mais claro */
 }
 
 #barra-navegacao .navbar-nav .nav-link.active {
-    color: #451a0a;
+  color: #451a0a;
 }
 
 .navbar-nav .nav-link.btn {
-    color: #fffbce; 
-    background-color: #451a0a;
-    border-color: #451a0a;
+  color: #fffbce;
+  background-color: #451a0a;
+  border-color: #451a0a;
 }
 
 .navbar-nav .nav-link.btn:hover {
-    background-color: #6e3d2b;
-    border-color: #6e3d2b;
+  background-color: #6e3d2b;
+  border-color: #6e3d2b;
 }
 
 #barra-navegacao .dropdown-menu .dropdown-item {
-    color: #451a0a; /* Cor marrom para os itens do dropdown */
+  color: #451a0a; /* Cor marrom para os itens do dropdown */
 }
 
 #barra-navegacao .dropdown-menu .dropdown-item:hover,
 #barra-navegacao .dropdown-menu .dropdown-item:focus {
-    color: #fffbce;
-    background-color: #451a0a;
+  color: #fffbce;
+  background-color: #451a0a;
 }
-
 
 /* ===== CARROSSEL ===== */
 .carousel-item img {
@@ -120,11 +119,11 @@ body {
 }
 
 .section-divider {
-  width: 60px;
-  height: 3px; /* espessura */
-  background-color: #451a0a; /* cor marrom café */
-  border: none;
   margin: 0 auto 2rem auto;
+  width: 60px;
+  border: 2.75px solid #451a0a; /*espessura e cor definidas aqui*/
+  border-radius: 5px;
+  opacity: 1;
 }
 
 .card {
@@ -182,4 +181,9 @@ body {
 /* ===== RODAPÉ ===== */
 footer {
   background-color: #fff2b2;
+}
+
+.rodape-titulo {
+  font-family: "Libre Baskerville", serif, "Times New Roman", Times, serif;
+  font-weight: bold;
 }
