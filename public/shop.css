@@ -187,3 +187,21 @@ footer {
   font-family: "Libre Baskerville", serif, "Times New Roman", Times, serif;
   font-weight: bold;
 }
+
+/* Para os links não funcionais da seção "Links Rápidos" */
+.link-indisponivel {
+  color: #451a0a;
+  text-decoration: none;
+}
+
+.link-indisponivel:hover {
+  color: #6e3d2b;
+  text-decoration: none;
+}
+
+/* Estilo dos avisos dos links não funcionais */
+#modalCardWarning .modal-header {
+  background-color: white;
+  color: black;
+  border: none;
+}
